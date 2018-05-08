@@ -1,0 +1,41 @@
+
+    <td></td>
+    <td valign="middle">
+        <input type="text" placeholder="Name" [ngModel] = "name" (ngModelChange) = "onChangeName($event)"><br/>
+        {{name}}
+    </td>
+    <td valign="middle">
+        <input type="text" placeholder="Surname" [ngModel] = "surname" (ngModelChange) = "onChangeSurname($event)"><br/>
+        {{surname}}
+    </td>
+    <td valign="middle">
+        <input type="checkbox" name="Gender" value = "Male" [ngModel] = "genders" (ngModelChange) = "onChangeMale($event)">Male<br/>
+        <input type="checkbox" name="Gender" value = "Female" [ngModel] = "genders" (ngModelChange) = "onChangeFemale($event)">Female
+    </td>
+    <td valign="middle">
+        <input type="text" placeholder="Email" [ngModel] = "email" (ngModelChange) = "onChangeEmail($event)">
+    </td>
+    <td valign="middle">
+        from:<br/>
+        <input type="text" placeholder="AgeFrom" [ngModel] = "ageFrom" (ngModelChange) = "onChangeAgeFrom($event)"><br/>
+        {{ageFrom}}<br/>
+        to:<br/>
+        <input type="text" placeholder="AgeTo" [ngModel] = "ageTo" (ngModelChange) = "onChangeAgeTo($event)"><br/>
+        {{ageTo}}
+    </td>
+    <td valign="middle">
+        from:<br/>
+        <input type="text" placeholder="BirthdayFrom" [ngModel] = "birthdayFrom" (ngModelChange) = "onChangeBirthdayFrom($event)"><br/>
+        {{birthdayFrom}}<br/>
+        to:<br/>
+        <input type="text" placeholder="BirthdayTo" [ngModel] = "birthdayTo" (ngModelChange) = "onChangeBirthdayTo($event)"><br/>
+        {{birthdayTo}}
+    </td>
+    <td valign="middle">
+        from:<br/>
+        <input type="text" placeholder="IncomeFrom" [ngModel] = "incomeFrom" (ngModelChange) = "onChangeIncomeFrom($event)"><br/>
+        {{incomeFrom}}<br/>
+        to:<br/>
+        <input type="text" placeholder="IncomeTo" [ngModel] = "incomeTo" (ngModelChange) = "onChangeIncomeTo($event)"><br/>
+        {{incomeTo}}
+    </td>
