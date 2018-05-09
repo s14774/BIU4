@@ -10,10 +10,8 @@
       <th>Birthday</th>
       <th>Income</th>
     </tr>
-   <tr person-filter [persons]="items" (filterPersons)="filter($event)"></tr>
-    <tr *ngFor="let item of items" person-table-row [model]="item">
-    </tr>
+    <tr person-filter [persons]="items" (filterPersons)="filter($event)"></tr>
+    <tr *ngFor="let item of items" person-table-row [model]="item"></tr>
   </table>
-  <person-table-paging (next)="next()" (prev)="prev()">
-    </person-table-paging> 
+  <person-table-paging (next)="next()" (prev)="prev()"></person-table-paging> 
 </div>
